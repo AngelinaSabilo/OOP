@@ -26,7 +26,7 @@ void Container::Out_Container(ofstream& ofst) {
 
     for (int i = 0; i < Len; i++) {
         ofst << i << ": ";
-        Temp_Node->Cont->Out_Data(Temp_Node->Cont->Get_Name(), ofst);
+        Temp_Node->Cont->Out_Data(Temp_Node->Cont->Get_Name(), Temp_Node->Cont->Get_Habitation(), ofst);
         Temp_Node = Temp_Node->Next;
     }
 }

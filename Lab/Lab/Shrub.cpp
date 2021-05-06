@@ -43,7 +43,7 @@ void Shrub::In_Data(ifstream& ifst) {
     }
 }
 
-void Shrub::Out_Data(string Name, ofstream& ofst) {
+void Shrub::Out_Data(string Name, Habitation H, ofstream& ofst) {
     ofst << "It's a shrub with name: " << Name << endl;
     ofst << "Shrub's flowering month is ";
 
@@ -82,6 +82,23 @@ void Shrub::Out_Data(string Name, ofstream& ofst) {
     }
     else if (M == DECEMBER) {
         ofst << "December";
+    }
+
+    ofst << endl;
+
+    ofst << "Shrub's habitation is ";
+
+    if (H == TUNDRA) {
+        ofst << "Tundra";
+    }
+    else if (H == DESERT) {
+        ofst << "Desert";
+    }
+    else if (H == STEPPE) {
+        ofst << "Steppe";
+    }
+    else if (H == TAIGA) {
+        ofst << "Taiga";
     }
 
     ofst << endl << endl;

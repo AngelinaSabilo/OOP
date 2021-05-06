@@ -24,7 +24,7 @@ class Shrub : public Plant {
     Month M; //Месяц цветения
 public:
     void In_Data(ifstream& ifst); //Функция ввода кустарника
-    void Out_Data(string Name, ofstream& ofst); //Функция вывода кустарника
+    void Out_Data(string Name, Habitation H, ofstream& ofst); //Функция вывода кустарника
     Shrub() {};
 };
 

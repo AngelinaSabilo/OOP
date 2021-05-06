@@ -8,7 +8,7 @@ class Tree : public Plant {
     long int Age; //Возраст дерева
 public:
     void In_Data(ifstream& ifst); //Функция ввода дерева
-    void Out_Data(string Name, ofstream& ofst); //Функция вывода дерева
+    void Out_Data(string Name, Habitation H, ofstream& ofst); //Функция вывода дерева
     Tree() {};
 };
 
