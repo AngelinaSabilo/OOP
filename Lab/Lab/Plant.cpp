@@ -26,3 +26,7 @@ Plant* Plant::In_Plant(ifstream& ifst) {
 
     return P;
 }
+
+void Plant::Out_Only_Tree(string Name, ofstream& ofst) {
+    ofst << endl;
+}

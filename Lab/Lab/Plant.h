@@ -16,6 +16,7 @@ public:
                                               //она будет определена каждого класса растения
     virtual void Out_Data(string Name, ofstream& ofst) = 0; //Чисто вирутальная функция вывода растения,
                                               //она будет определена каждого класса растения
+    virtual void Out_Only_Tree(string Name, ofstream& ofst); //Функция вывода только деревьев
 protected:
     Plant() {};
 };
