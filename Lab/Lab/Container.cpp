@@ -43,3 +43,27 @@ void Container::Clear_Container() {
 
     Len = 0;
 }
+
+void Container::Sort() {
+    if (Len > 1) {
+        Node* First = Head;
+        Node* Second = Head->Next;
+
+        Node* Temp = new Node;
+
+        while (First->Next && First->Next->Next) {
+            while (Second && Second->Next) {
+                if (First->Cont->Compare(*Second->Cont)) {
+                    Temp->Cont = First->Cont;
+                    First->Cont = Second->Cont;
+                    Second->Cont = Temp->Cont;
+                }
+
+                Second = Second->Next;
+            }
+
+            First = First->Next;
+            Second = First->Next;
+        }
+    }
+}

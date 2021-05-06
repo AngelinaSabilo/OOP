@@ -26,3 +26,7 @@ Plant* Plant::In_Plant(ifstream& ifst) {
 
     return P;
 }
+
+bool Plant::Compare(Plant& Other) {
+    return Plant_consonant_letters(Name) > Other.Plant_consonant_letters(Other.Get_Name());
+}
