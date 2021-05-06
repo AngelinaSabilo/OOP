@@ -16,6 +16,7 @@ public:
                                               //она будет определена каждого класса растения
     virtual void Out_Data(string Name, ofstream& ofst) = 0; //Чисто вирутальная функция вывода растения,
                                               //она будет определена каждого класса растения
+    virtual int Plant_consonant_letters(string Name) = 0; //Функция подсчета числа согласных букв в названии растения
 protected:
     Plant() {};
 };
