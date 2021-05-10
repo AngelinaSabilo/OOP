@@ -16,7 +16,7 @@ void Flower::In_Data(ifstream& ifst) {
     }
 }
 
-void Flower::Out_Data(string Name, ofstream& ofst) {
+void Flower::Out_Data(string Name, Habitation H, ofstream& ofst) {
     ofst << "It's a flower with name: " << Name << endl;
     ofst << "Flower's type is ";
 
@@ -28,6 +28,23 @@ void Flower::Out_Data(string Name, ofstream& ofst) {
     }
     else if (T == WILD) {
         ofst << "Wild";
+    }
+
+    ofst << endl;
+
+    ofst << "Flower's habitation is ";
+
+    if (H == TUNDRA) {
+        ofst << "Tundra";
+    }
+    else if (H == DESERT) {
+        ofst << "Desert";
+    }
+    else if (H == STEPPE) {
+        ofst << "Steppe";
+    }
+    else if (H == TAIGA) {
+        ofst << "Taiga";
     }
 
     ofst << endl << endl;

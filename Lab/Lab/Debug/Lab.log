@@ -1,10 +1,2 @@
 ﻿  Container.cpp
-  Flower.cpp
-  Lab.cpp
-  Plant.cpp
-C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Lab\Plant.cpp(39,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Lab\Plant.cpp(40,27): warning C4018: <: несоответствие типов со знаком и без знака
-  Shrub.cpp
-  Tree.cpp
-  Создание кода...
   Lab.vcxproj -> C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Debug\Lab.exe

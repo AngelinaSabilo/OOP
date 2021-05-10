@@ -15,7 +15,7 @@ class Flower : public Plant {
     Type T; //Тип цветка
 public:
     void In_Data(ifstream& ifst); //Функция ввода цветка
-    void Out_Data(string Name, ofstream& ofst); //Функция вывода цветка
+    void Out_Data(string Name, Habitation H, ofstream& ofst); //Функция вывода цветка
     Flower() {};
 };
 

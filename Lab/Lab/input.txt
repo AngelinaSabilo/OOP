@@ -12,4 +12,5 @@ Steppe
 4391
 3
 Chamomile
+Taiga
 Wild
