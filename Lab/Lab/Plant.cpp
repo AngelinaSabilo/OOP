@@ -6,6 +6,10 @@ string Plant::Get_Name() {
     return Name;
 }
 
+Habitation Plant::Get_Habitation() {
+    return H;
+}
+
 Plant* Plant::In_Plant(ifstream& ifst) {
     Plant* P;
     int K;
@@ -25,6 +29,23 @@ Plant* Plant::In_Plant(ifstream& ifst) {
     }
 
     ifst >> P->Name;
+
+    string Habitant = "";
+
+    ifst >> Habitant;
+
+    if (Habitant == "Tundra") {
+        P->H = TUNDRA;
+    }
+    else if (Habitant == "Desert") {
+        P->H = DESERT;
+    }
+    else if (Habitant == "Steppe") {
+        P->H = STEPPE;
+    }
+    else if (Habitant == "Taiga") {
+        P->H = TAIGA;
+    }
 
     P->In_Data(ifst);
 
