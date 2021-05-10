@@ -1,4 +1,5 @@
 ﻿  Container.cpp
+  Flower.cpp
   Lab.cpp
   Plant.cpp
 C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Lab\Plant.cpp(35,23): warning C4018: <: несоответствие типов со знаком и без знака
