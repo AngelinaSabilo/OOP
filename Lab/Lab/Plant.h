@@ -28,6 +28,7 @@ public:
                                               //она будет определена каждого класса растения
     int Plant_consonant_letters(); //Функция подсчета числа согласных букв в названии растения
     bool Compare(Plant& Other); //Функция сравнения числа согласных букв в названиях растений
+    virtual void Out_Only_Tree(string Name, Habitation H, ofstream& ofst); //Функция вывода только деревьев
 protected:
     Plant() {};
 };

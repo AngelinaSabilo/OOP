@@ -13,6 +13,7 @@ public:
     void Out_Container(ofstream& ofst); //Функция вывода контейнера
     void Clear_Container(); //Функция очистки контейнера
     void Sort(); //Функция сортировки контейнера
+    void Out_Only_Tree(ofstream& ofst); //Функция вывода только деревьев
     Container(); //Конструктор
     ~Container() { Clear_Container(); } //Деструктор  
 };

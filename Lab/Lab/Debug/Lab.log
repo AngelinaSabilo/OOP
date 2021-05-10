@@ -1,2 +1,11 @@
 ﻿  Container.cpp
+  Flower.cpp
+  Lab.cpp
+  Plant.cpp
+C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Lab\Plant.cpp(60,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Lab\Plant.cpp(61,27): warning C4018: <: несоответствие типов со знаком и без знака
+  Shrub.cpp
+  Tree.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Debug\Lab.exe при последней инкрементной компоновке; выполняется полная компоновка
   Lab.vcxproj -> C:\Users\of913\source\repos\11_2_2_1_Git\OOP\Lab\Debug\Lab.exe

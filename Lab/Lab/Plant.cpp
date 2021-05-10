@@ -72,3 +72,7 @@ int Plant::Plant_consonant_letters() {
 bool Plant::Compare(Plant& Other) {
     return Plant_consonant_letters() > Other.Plant_consonant_letters();
 }
+
+void Plant::Out_Only_Tree(string Name, Habitation H, ofstream& ofst) {
+    ofst << endl;
+}

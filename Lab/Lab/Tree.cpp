@@ -24,3 +24,7 @@ void Tree::Out_Data(string Name, Habitation H, ofstream& ofst) {
 
     ofst << endl << endl;
 }
+
+void Tree::Out_Only_Tree(string Name, Habitation H, ofstream& ofst) {
+    Out_Data(Name, H, ofst);
+}

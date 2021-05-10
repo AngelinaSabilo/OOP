@@ -9,6 +9,7 @@ class Tree : public Plant {
 public:
     void In_Data(ifstream& ifst); //Функция ввода дерева
     void Out_Data(string Name, Habitation H, ofstream& ofst); //Функция вывода дерева
+    void Out_Only_Tree(string Name, Habitation H, ofstream& ofst); //Функция вывода только деревьев
     Tree() {};
 };
 
