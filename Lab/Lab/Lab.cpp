@@ -26,6 +26,8 @@ int main(int argc, char* argv[])
 
     C.Out_Container(ofst); //Вывод контейнера
 
+    C.Out_Only_Tree(ofst); //Вывод только деревьев
+
     C.Clear_Container();//Очистка контейнера
 
     ofst << "Empty container. " << endl;
