@@ -27,6 +27,23 @@ Plant* Plant::In_Plant(ifstream& ifst) {
     return P;
 }
 
+int Plant::Plant_consonant_letters() {
+    string Constant_letter = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
+
+    int Amount = 0;
+
+    for (int i = 0; i < Name.length(); i++) {
+        for (int j = 0; j < Constant_letter.length(); j++) {
+            if (Name[i] == Constant_letter[j]) {
+                Amount++;
+                break;
+            }
+        }
+    }
+
+    return Amount;
+}
+
 bool Plant::Compare(Plant& Other) {
-    return Plant_consonant_letters(Name) > Other.Plant_consonant_letters(Other.Get_Name());
+    return Plant_consonant_letters() > Other.Plant_consonant_letters();
 }

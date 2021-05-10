@@ -9,7 +9,6 @@ class Tree : public Plant {
 public:
     void In_Data(ifstream& ifst); //Функция ввода дерева
     void Out_Data(string Name, ofstream& ofst); //Функция вывода дерева
-    int Plant_consonant_letters(string Name); //Функция подсчета числа согласных букв в названии растения
     Tree() {};
 };
 

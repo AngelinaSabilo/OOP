@@ -29,7 +29,7 @@ void Container::Out_Container(ofstream& ofst) {
         Temp_Node->Cont->Out_Data(Temp_Node->Cont->Get_Name(), ofst);
 
         ofst << "Amount of consonant letters in the name of plant = " <<
-            Temp_Node->Cont->Plant_consonant_letters(Temp_Node->Cont->Get_Name()) << endl << endl;
+            Temp_Node->Cont->Plant_consonant_letters() << endl << endl;
 
         Temp_Node = Temp_Node->Next;
     }
